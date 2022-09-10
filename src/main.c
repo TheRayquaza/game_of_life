@@ -53,6 +53,7 @@ int main(int argc, char *argv[])
         sleep(4);
         while (remaining(board, *rows, *cols))
         {
+            system("clear");
             board = next_generation(board, *rows, *cols);
             generation++;
             display_generation(generation, board, *rows, *cols);
@@ -72,6 +73,7 @@ int main(int argc, char *argv[])
         display_generation(generation, board, *rows, *cols);
         while (remaining(board, *rows, *cols))
         {
+            system("clear");
             board = next_generation(board, *rows, *cols);
             generation++;
             display_generation(generation, board, *rows, *cols);
